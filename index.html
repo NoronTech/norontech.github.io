@@ -3,84 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support</title>
-    <link rel="stylesheet" href="support.css">
+    <title>NoronTech - Apps & IT Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+    function togglePrivacy() {
+        const details = document.getElementById('privacyDetails');
+        const btn = document.getElementById('privacyBtn');
+        if (details.style.display === 'none') {
+            details.style.display = 'block';
+            btn.textContent = 'Hide Privacy Policy';
+        } else {
+            details.style.display = 'none';
+            btn.textContent = 'Read Privacy Policy';
+        }
+    }
+</script>
 <body>
-    <!-- Introduction and header -->
     <header>
-        <h1>Getting Help from Our Support Team</h1>
         <nav>
+            <div class="logo">NoronTech</div>
             <ul>
-                <li><a href="#" >General Inquiry</a></li>
-                <li><a href="#" >FAQs</a></li>
-                <li><a href="#" >Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#apps">Our Apps</a></li>
+                <li><a href="#services">IT Services</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#privacy">Privacy</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contact Form
-    <section id="contact-form">
-        <h2>Submit a Support Request</h2>
-        <form action="" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name"><br><br>
+    <section id="home" class="hero">
+        <h1>Welcome to NoronTech</h1>
+        <p>Empowering Tomorrow with AI Innovation</p>
+    </section>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email"><br><br>
+    <section id="apps" class="apps">
+        <h2>Our Applications</h2>
+        <div class="app-grid">
+            <div class="app-card">
+                <h3>qGPT</h3>
+                <p>All LLMs at once.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="app-card">
+                <h3>q365 (Coming soon)</h3>
+                <p>Run GPT locally in your phones</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-            <label for="subject">Subject:</label>
-            <textarea id="subject" name="subject"></textarea><br><br>
+    <section id="services" class="services">
+        <h2>IT Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Custom Software Development</h3>
+                <p>Tailored solutions for your business needs</p>
+            </div>
+            <div class="service-card">
+                <h3>Cloud Solutions</h3>
+                <p>Secure and scalable cloud infrastructure</p>
+            </div>
+            <div class="service-card">
+                <h3>IT Consulting</h3>
+                <p>Expert guidance for your digital transformation</p>
+            </div>
+        </div>
+    </section>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea><br><br>
-
-            <input type="submit" value="Submit Request">
-        </form>
+    <!-- <section id="team" class="team">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <h3>Hoa Tran</h3>
+                <p>Founder</p>
+            </div>
+            <div class="team-member">
+                <h3>Jacob Fierro</h3>
+                <p>Lead Developer</p>
+            </div>
+        </div>
     </section> -->
 
-    <!-- Support Team Information -->
-    <section id="support-team">
-        <h2>Meet Our Support Team</h2>
-        <p><a href = "mailto:hoaknoppix@gmail.com">Send us an email</a></p>
-        <!-- <ul>
-            <li>
-                Name: John Doe
-                Email: [johndoe@example.com](mailto:johndoe@example.com)
-                Role: Lead Support Specialist
-            </li>
-            <li>
-                Name: Jane Smith
-                Email: [janesmith@example.com](mailto:janesmith@example.com)
-                Role: Junior Support Specialist
-            </li>
-        </ul> -->
+    <section id="support" class="support">
+        <h2>Support</h2>
+        <div class="support-content">
+            <h3>Need Help?</h3>
+            <p>Contact our support team:</p>
+            <a href="mailto:hoaqt91@gmail.com" class="btn">Email Support</a>
+            <a href="#" class="btn">Documentation</a>
+        </div>
     </section>
 
-    <!-- Frequently Asked Questions
-    <section id="faqs">
-        <h2>Frequently Asked Questions</h2>
-        <ul>
-            <li>
-                Q: What is your return/exchange policy?
-                A: See our full Return and Exchange Policy.
-            </li>
-            <li>
-                Q: How long does shipping take?
-                A: Shipping typically takes 3-7 business days for domestic orders and 10-15 business days for international orders.
-            </li>
-        </ul>
+    <section id="privacy" class="privacy">
+        <h2>Privacy Policy</h2>
+        <div class="privacy-content">
+            <p>We take your privacy seriously. Read our detailed privacy policy to understand how we handle your data.</p>
+            <a href="javascript:void(0)" onclick="togglePrivacy()" class="btn" id="privacyBtn">Read Privacy Policy</a>
+            <div id="privacyDetails" class="privacy-details" style="display: none;">
+                <h3>Privacy Policy Details</h3>
+                <div class="policy-section">
+                    <h4>1. Data Collection</h4>
+                    <p>We collect minimal data necessary for our AI applications:</p>
+                    <ul>
+                        <li>User queries for AI model interactions</li>
+                        <li>Basic device information for compatibility</li>
+                        <li>Email addresses for support communication</li>
+                    </ul>
+                </div>
+                <div class="policy-section">
+                    <h4>2. Data Usage</h4>
+                    <p>Your data is used exclusively for:</p>
+                    <ul>
+                        <li>Processing AI model requests</li>
+                        <li>Improving our services</li>
+                        <li>Technical support</li>
+                    </ul>
+                </div>
+                <div class="policy-section">
+                    <h4>3. Data Protection</h4>
+                    <p>We implement industry-standard security measures to protect your information:</p>
+                    <ul>
+                        <li>Encryption of all data transmissions</li>
+                        <li>Secure data storage systems</li>
+                        <li>Regular security audits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Terms of Service -->
-    <!-- <section id="terms-of-service">
-        <h2>Terms of Service</h2>
-        <p>Our terms of service can be found here.</p> -->
-    <!-- </section> -->
-
-    <!-- Copyright Information -->
     <footer>
-        <p>&copy; 2025 <a href="#">NoronTech</a>. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: hoaqt91@gmail.com</p>
+                <!-- <p>Phone: (555) 123-4567</p> -->
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <!-- <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a> -->
+                    <a href="https://github.com/norontech">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NoronTech. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
