@@ -179,3 +179,25 @@ h3 {
 .privacy-content p, .support-content p {
     color: #e0e0e0;
 }
+
+.store-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.store-icon {
+    width: 200px;
+/*    height: 40px; */
+    transition: transform 0.3s;
+}
+
+.store-icon:hover {
+    transform: scale(1.1);
+}
+
+.app-logo {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 1rem;
+}
